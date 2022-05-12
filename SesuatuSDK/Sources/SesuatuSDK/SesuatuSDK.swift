@@ -2,14 +2,12 @@ import Foundation
 import NeedleFoundation
 import RxAlamofire
 import RxSwift
-import UIKit
 
 @objc(SesuatuSDK)
 public class SesuatuSDK : NSObject {
     
     let boringRepository : BoringRepository
     let disposeBag = DisposeBag()
-    var window: UIWindow?
 
     @objc
     public override init() {
