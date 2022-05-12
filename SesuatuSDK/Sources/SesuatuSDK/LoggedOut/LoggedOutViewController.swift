@@ -121,7 +121,7 @@ class LoggedOutViewController: UIViewController {
     @objc
     private func didTapBoringButton() {
         boringRepository.getBoringActivity()
-            .subscribe(on: MainScheduler())
+            .observe(on: MainScheduler())
             .subscribe(onSuccess: { [weak self] boringActivity in
                 guard let self = self else {return}
                 self.player1Field?.text = boringActivity.activity

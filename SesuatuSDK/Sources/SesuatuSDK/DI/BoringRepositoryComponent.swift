@@ -7,6 +7,7 @@
 
 import Foundation
 import NeedleFoundation
+import Alamofire
 
 protocol BoringRepositoryDependency: Dependency {
     var boredRequestAdapter: BoredRequestAdapter { get }
@@ -19,7 +20,11 @@ class BoringRepositoryComponent: Component<BoringRepositoryDependency>, BoringRe
     }
     
     var boredApi: BoredApi {
-        return BoredApi(interceptor: dependency.boredRequestAdapter)
+        return BoredApi(session: session)
+    }
+    
+    var session: Session {
+        return shared{Session(interceptor: dependency.boredRequestAdapter)}
     }
     
 }

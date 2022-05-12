@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FC6291C282D155C00160692 /* SesuatuSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC6291B282D155C00160692 /* SesuatuSDK */; };
 		DD5F7816282D044E0095B90A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F7815282D044E0095B90A /* AppDelegate.m */; };
 		DD5F7819282D044E0095B90A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F7818282D044E0095B90A /* SceneDelegate.m */; };
 		DD5F781C282D044E0095B90A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F781B282D044E0095B90A /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		DD5F7821282D04510095B90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5F7820282D04510095B90A /* Assets.xcassets */; };
 		DD5F7824282D04510095B90A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5F7822282D04510095B90A /* LaunchScreen.storyboard */; };
 		DD5F7827282D04510095B90A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F7826282D04510095B90A /* main.m */; };
-		DD5F7830282D04950095B90A /* SesuatuSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DD5F782F282D04950095B90A /* SesuatuSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5F7830282D04950095B90A /* SesuatuSDK in Frameworks */,
+				2FC6291C282D155C00160692 /* SesuatuSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			);
 			name = SesuatuApp;
 			packageProductDependencies = (
-				DD5F782F282D04950095B90A /* SesuatuSDK */,
+				2FC6291B282D155C00160692 /* SesuatuSDK */,
 			);
 			productName = SesuatuApp;
 			productReference = DD5F7811282D044D0095B90A /* SesuatuApp.app */;
@@ -380,7 +380,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DD5F782F282D04950095B90A /* SesuatuSDK */ = {
+		2FC6291B282D155C00160692 /* SesuatuSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SesuatuSDK;
 		};
