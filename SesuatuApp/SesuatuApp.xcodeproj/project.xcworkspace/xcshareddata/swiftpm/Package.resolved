@@ -47,6 +47,15 @@
         }
       },
       {
+        "package": "SesuatuSDK",
+        "repositoryURL": "https://github.com/uziwuzzy/SesuatuSDK",
+        "state": {
+          "branch": "main",
+          "revision": "3c18ee59277d122a5c8faf818f66add3d86b219d",
+          "version": null
+        }
+      },
+      {
         "package": "SnapKit",
         "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
         "state": {

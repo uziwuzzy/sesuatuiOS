@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FC6291C282D155C00160692 /* SesuatuSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2FC6291B282D155C00160692 /* SesuatuSDK */; };
+		DD173ED128337FAB00BCB92C /* SesuatuSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DD173ED028337FAB00BCB92C /* SesuatuSDK */; };
 		DD5F7816282D044E0095B90A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F7815282D044E0095B90A /* AppDelegate.m */; };
 		DD5F7819282D044E0095B90A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F7818282D044E0095B90A /* SceneDelegate.m */; };
 		DD5F781C282D044E0095B90A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5F781B282D044E0095B90A /* ViewController.m */; };
@@ -30,7 +30,6 @@
 		DD5F7823282D04510095B90A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD5F7825282D04510095B90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5F7826282D04510095B90A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD5F782D282D04770095B90A /* SesuatuSDK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SesuatuSDK; path = ../SesuatuSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FC6291C282D155C00160692 /* SesuatuSDK in Frameworks */,
+				DD173ED128337FAB00BCB92C /* SesuatuSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +47,6 @@
 		DD5F7808282D044D0095B90A = {
 			isa = PBXGroup;
 			children = (
-				DD5F782D282D04770095B90A /* SesuatuSDK */,
 				DD5F7813282D044E0095B90A /* SesuatuApp */,
 				DD5F7812282D044D0095B90A /* Products */,
 				DD5F782E282D04950095B90A /* Frameworks */,
@@ -105,7 +103,7 @@
 			);
 			name = SesuatuApp;
 			packageProductDependencies = (
-				2FC6291B282D155C00160692 /* SesuatuSDK */,
+				DD173ED028337FAB00BCB92C /* SesuatuSDK */,
 			);
 			productName = SesuatuApp;
 			productReference = DD5F7811282D044D0095B90A /* SesuatuApp.app */;
@@ -134,6 +132,9 @@
 				Base,
 			);
 			mainGroup = DD5F7808282D044D0095B90A;
+			packageReferences = (
+				DD173ECF28337FAB00BCB92C /* XCRemoteSwiftPackageReference "SesuatuSDK" */,
+			);
 			productRefGroup = DD5F7812282D044D0095B90A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,9 +380,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		DD173ECF28337FAB00BCB92C /* XCRemoteSwiftPackageReference "SesuatuSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uziwuzzy/SesuatuSDK";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		2FC6291B282D155C00160692 /* SesuatuSDK */ = {
+		DD173ED028337FAB00BCB92C /* SesuatuSDK */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = DD173ECF28337FAB00BCB92C /* XCRemoteSwiftPackageReference "SesuatuSDK" */;
 			productName = SesuatuSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
